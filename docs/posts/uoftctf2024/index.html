@@ -12,7 +12,7 @@
   <meta name="title" content="[UofT CTF 2024] All Worbled Up Write-up &middot; khoavnpsc" />
   
   
-  <meta name="keywords" content="Reverse Engineering, CTF, " />
+  <meta name="keywords" content="Reverse Engineering, CTF, Write-up, " />
   
   
   <link rel="canonical" href="http://localhost:1313/posts/uoftctf2024/" />
@@ -76,6 +76,7 @@
     <meta property="article:modified_time" content="2024-01-15T00:00:00+00:00">
     <meta property="article:tag" content="Reverse Engineering">
     <meta property="article:tag" content="CTF">
+    <meta property="article:tag" content="Write-Up">
 
   
   <meta name="twitter:card" content="summary">
@@ -103,7 +104,7 @@
     
     "dateModified": "2024-01-15T00:00:00\u002b00:00",
     
-    "keywords": ["Reverse Engineering","CTF"],
+    "keywords": ["Reverse Engineering","CTF","Write-up"],
     
     "mainEntityOfPage": "true",
     "wordCount": "1558"
@@ -161,7 +162,12 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 min-h-[130px] opacity-65 pl-[24px] pr-[24px] bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal" style="z-index:80"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     
@@ -300,6 +306,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -427,6 +443,14 @@
 </span>
   </span>
   
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/write-up/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Write-Up
+  </span>
+</span>
+  </span>
+  
   
   
   
@@ -461,7 +485,7 @@
     
      <div
       class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open id="TOCView"
   class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">

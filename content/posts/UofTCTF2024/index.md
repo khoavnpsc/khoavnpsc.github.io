@@ -1,7 +1,7 @@
 +++
 date = '2024-01-15'
 title = '[UofT CTF 2024] All Worbled Up Write-up'
-tags = ["Reverse Engineering", "CTF"]
+tags = ["Reverse Engineering", "CTF", "Write-up"]
 +++
 
 # All Worbled Up
